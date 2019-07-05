@@ -3,7 +3,7 @@
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/boot_chat
+    url: jdbc:mysql://localhost:3306/bookstory
     username: root
     password:
     driver-class-name: com.mysql.jdbc.Driver
