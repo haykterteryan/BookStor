@@ -1,0 +1,7 @@
+curl -H Content-Type:application/json -d '{"author": "johnny", "title": "password"}' -X POST http://localhost:8080
+
+curl -H Content-Type:application/json -d '{"author": "johnny", "title": "password"}' -X PUT http://localhost:8080/1
+
+curl -H "Content-Type:application/json" -X DELETE http://localhost:8080/1
+
+curl -X DELETE http://localhost:8080/?author=johnny

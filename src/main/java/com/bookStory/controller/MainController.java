@@ -5,6 +5,8 @@ import com.bookStory.domain.Book;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/")
@@ -18,10 +20,9 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity getByAuthor(@RequestParam("author") String author){
-        System.out.println(author);
-
-        return ResponseEntity.ok().build();
+    @ResponseBody
+    public List<Book> getByAuthor(@RequestParam("author") String author){
+        return bookDAO.getByAuthor(author);
     }
 
     @RequestMapping(method = RequestMethod.POST)

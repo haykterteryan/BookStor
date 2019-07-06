@@ -2,6 +2,7 @@ package com.bookStory.domain;
 
 public class Book {
 
+    private int id;
     private String author;
     private String title;
 
@@ -19,5 +20,13 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
